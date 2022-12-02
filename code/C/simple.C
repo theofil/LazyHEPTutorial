@@ -1,6 +1,19 @@
+// to compile this puppy, uncomment the last line in this file having the "int main()  ... "
+// and run this in your command prompt 
+// g++  simple.C -o simple.exe `root-config --glibs --cflags`
+
+// to run it as ROOT scipt just exectute the line belwo in your command prompt
+// root -l simple.C
+
+// to compile it with ACLiC use
+// root -l simple.C++
+
+#include <iostream>
+
 #include <TROOT.h>
 #include <TTree.h>
 #include <TFile.h>
+
 
 TTree *events;
 TFile *fp;
@@ -119,7 +132,6 @@ void init()
 
 void simple()
 {
-    
     fp = TFile::Open("http://theofil.web.cern.ch/theofil/cmsod/files/data.root", "READ");
     events = (TTree*)fp->Get("events");
     init();
@@ -130,5 +142,6 @@ void simple()
 	events->GetEntry(i);
         cout << NMuon << ", " << NJet << endl;
     }
-
 }
+
+//int main(){simple (); return 0;}
