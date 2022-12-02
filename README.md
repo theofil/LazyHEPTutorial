@@ -1,9 +1,6 @@
 # LazyHEPTutorial
 
-This is meant to be an introduction on how to analyze data from LHC experiments. You can download this repository by doing:
-```
-git clone git@github.com:theofil/LazyHEPTutorial.git
-```
+This is meant to be an introduction on how to analyze data from LHC experiments.
 
 ## Introduction
 The [LHC](https://www.home.cern/science/accelerators/large-hadron-collider) experiements use [ROOT](https://root.cern) to analyze and **store** the information recorded during hadronic collisions.
