@@ -30,7 +30,7 @@ using namespace std;
 float fraction = 1; // fraction of events to proccess for each sample
 string files[]  = {"data.root", "qcd.root", "wjets.root", "single_top.root", "ww.root", "ttbar.root",  "wz.root", "zz.root", "dy.root"};
 string labels[] = {"Data", "QCD", "WJets", "Single Top", "WW", "TTbar", "WZ", "ZZ",  "DY"};
-int colors[] =  {1,2,3,4,5,6,7,8,9};
+int colors[] =  {1, 6, 3, 4, 9, 2, 7, 8, 5};
 string path = "http://theofil.web.cern.ch/theofil/cmsod/files/";
 
 // pointers to file and tree objects
@@ -160,15 +160,6 @@ TLegend *l_mumuMass;
 void analysis()
 { 
 
-//    for(auto color: colors)
-//    {
-//      cout << color << endl; 
-//    }
-//    cout << endl;
-//    for(int i = 0; i < nFiles; ++i) 
-//    {
-//	cout << colors[i] << endl;
-//    }
     setTDRStyle();
     gStyle->SetOptTitle(0);
 
@@ -199,7 +190,7 @@ void analysis()
         h_mumuMass[i]->SetLineColor(colors[i]);
         h_mumuMass[i]->GetXaxis()->SetNdivisions(509);
         h_mumuMass[i]->GetYaxis()->SetNdivisions(509);
-        h_mumuMass[i]->GetXaxis()->SetTitle("mumuMass");
+        h_mumuMass[i]->GetXaxis()->SetTitle("mass(#mu^{+}#mu^{-}) [GeV]");
         h_mumuMass[i]->GetYaxis()->SetTitle("events / bin");
 
     }
@@ -212,7 +203,6 @@ void analysis()
    
     for(int i = 0; i < nFiles; ++i) 
     {
-//        if(i==1 || i==2 || i==3 || i == 4 || i==5 || i==6)continue;
 	cout <<"opening "<< files[i] << " from path " << path << endl;   
 
      	fp = TFile::Open( (path + files[i]).c_str() , "READ");
