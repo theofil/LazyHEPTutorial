@@ -166,8 +166,7 @@ void analysis()
     // create an array of samples, holding objects of the sample type
     for(int i = 0; i < nFiles; ++i) 
     {
-        //printf("Adding file %s as %s with color %d \n", files[i].c_str(), labels[i].c_str(), colors[i]);
-        cout << "Adding file " << files[i] << " as " << labels[i] << " with color " << colors[i] << endl; 
+        cout << "Adding file " << files[i] << " at files[" << i << "] " << " as " << labels[i] << " with color " << colors[i] << endl; 
         string histoName;
 
         // create histograms and the histogram stack
