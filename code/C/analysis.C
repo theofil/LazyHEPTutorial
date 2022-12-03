@@ -9,31 +9,29 @@
 // root -l analysis.C++
 
 #include <iostream>
-#include <vector>
 #include <string>
-#include <stdio.h>
 
 #include <TROOT.h>
-#include <TTree.h>
 #include <TFile.h>
 #include <TH1F.h>
 #include <TH1I.h>
 #include "TLegend.h"
 #include "TLegendEntry.h"
 #include "THStack.h"
-
+#include "TCanvas.h"
 #include "setTDRStyle.C"
+#include "TTree.h"
+
 
 using namespace std;
 
 // configuration
-float fraction = 1; // fraction of events to proccess for each sample
 #define nFiles  9
+float fraction = 1; // fraction of events to proccess for each sample
 string files[]  = {"data.root", "qcd.root", "wjets.root", "single_top.root", "ww.root", "ttbar.root",  "wz.root", "zz.root", "dy.root"};
 string labels[] = {"Data", "QCD", "WJets", "Single Top", "WW", "TTbar", "WZ", "ZZ",  "DY"};
-int colors[]   =  {1,2,3,4,5,6,7,8,9};
+int colors[] =  {1,2,3,4,5,6,7,8,9};
 string path = "http://theofil.web.cern.ch/theofil/cmsod/files/";
-
 
 // pointers to file and tree objects
 TFile *fp;
@@ -62,11 +60,11 @@ Float_t         Electron_E[2];
 Int_t           Electron_Charge[2];
 Float_t         Electron_Iso[2];
 Int_t           NPhoton;
-Float_t         Photon_Px[2];
-Float_t         Photon_Py[2];
-Float_t         Photon_Pz[2];
-Float_t         Photon_E[2];
-Float_t         Photon_Iso[2];
+Float_t         Photon_Px[3];
+Float_t         Photon_Py[3];
+Float_t         Photon_Pz[3];
+Float_t         Photon_E[3];
+Float_t         Photon_Iso[3];
 Float_t         MET_px;
 Float_t         MET_py;
 Float_t         MChadronicBottom_px;
@@ -94,7 +92,6 @@ Float_t         EventWeight;
 
 void init()
 {
-
    // Set branch addresses
    events->SetBranchAddress("NJet",&NJet);
    events->SetBranchAddress("Jet_Px",Jet_Px);
@@ -149,36 +146,44 @@ void init()
    events->SetBranchAddress("EventWeight",&EventWeight);
 }
 
-
-
 // book histogram for each variable
-TH1I *h_NMuon[nFiles];
+TH1F *h_NMuon[nFiles];
 THStack *hs_NMuon; 
 TCanvas *c_NMuon;
 TLegend *l_NMuon;
 
-TH1I *h_mumuMass[nFiles];
+TH1F *h_mumuMass[nFiles];
 THStack *hs_mumuMass; 
 TCanvas *c_mumuMass;
 TLegend *l_mumuMass;
 
-
 void analysis()
 { 
+
+//    for(auto color: colors)
+//    {
+//      cout << color << endl; 
+//    }
+//    cout << endl;
+//    for(int i = 0; i < nFiles; ++i) 
+//    {
+//	cout << colors[i] << endl;
+//    }
     setTDRStyle();
     gStyle->SetOptTitle(0);
 
     // create an array of samples, holding objects of the sample type
     for(int i = 0; i < nFiles; ++i) 
     {
-        printf("Adding file %s as %s with color %d \n", files[i].c_str(), labels[i].c_str(), colors[i]);
+        //printf("Adding file %s as %s with color %d \n", files[i].c_str(), labels[i].c_str(), colors[i]);
+        cout << "Adding file " << files[i] << " as " << labels[i] << " with color " << colors[i] << endl; 
         string histoName;
 
         // create histograms and the histogram stack
         histoName = "h_NMuon_"+to_string(i);
 
-        h_NMuon[i] = new TH1I( histoName.c_str(), histoName.c_str(), 5, 0, 5); 
-        h_NMuon[i]->Sumw2(true);
+        h_NMuon[i] = new TH1F( histoName.c_str(), histoName.c_str(), 5, 0, 5); 
+        h_NMuon[i]->Sumw2();
         h_NMuon[i]->SetFillColor(colors[i]);
         h_NMuon[i]->SetLineColor(colors[i]);
         h_NMuon[i]->GetXaxis()->SetNdivisions(509);
@@ -188,8 +193,8 @@ void analysis()
 
         histoName = "h_mumuMass_"+to_string(i);
 
-        h_mumuMass[i] = new TH1I( histoName.c_str(), histoName.c_str(), 100, 0, 200); 
-        h_mumuMass[i]->Sumw2(true);
+        h_mumuMass[i] = new TH1F( histoName.c_str(), histoName.c_str(), 100, 0, 200); 
+        h_mumuMass[i]->Sumw2();
         h_mumuMass[i]->SetFillColor(colors[i]);
         h_mumuMass[i]->SetLineColor(colors[i]);
         h_mumuMass[i]->GetXaxis()->SetNdivisions(509);
@@ -207,6 +212,7 @@ void analysis()
    
     for(int i = 0; i < nFiles; ++i) 
     {
+//        if(i==1 || i==2 || i==3 || i == 4 || i==5 || i==6)continue;
 	cout <<"opening "<< files[i] << " from path " << path << endl;   
 
      	fp = TFile::Open( (path + files[i]).c_str() , "READ");
@@ -236,6 +242,8 @@ void analysis()
                 
                 float mumuMass2 = pow(E1 + E2, 2) - pow(px1 + px2, 2) - pow(py1 + py2, 2) - pow(pz1 + pz2, 2);
                 float mumuMass = pow(mumuMass2, 0.5);
+
+		h_mumuMass[i]->Fill(mumuMass, EventWeight);		
 	    }
 	}
 
@@ -279,8 +287,7 @@ void analysis()
     c_mumuMass->SetLogy();
     c_mumuMass->SaveAs("mumuMass.png");
     c_mumuMass->SaveAs("mumuMass.pdf");
-
-
 }
 
-//int main(){simple (); return 0;}
+//uncomment the line below if you want to compile analysis.C
+//int main(){analysis (); return 0;}
