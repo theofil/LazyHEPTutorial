@@ -85,7 +85,7 @@ We compare the data yield versus the MC simulated S+B sample in designated contr
 for which we expect the modeling of the data provided by the MC simulation to be sufficiently good.
 An example of this type of comparison is show below:
 
-<img src="https://theofil.web.cern.ch/theofil/images/LazyHEPtutorial_j2.png" width="300">
+<img src="https://raw.githubusercontent.com/theofil/LazyHEPTutorial/main/code/C/mumuMass.png" width="500">
 
 using the data and MC simulation from the [pocket-size data sample](http://theofil.web.cern.ch/theofil/cmsod/files/) of the [HEP Tutorial](http://opendata.cern.ch/record/50) analyzed with the 
 code I wrote for an [A-Z analysis relying solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb). 
