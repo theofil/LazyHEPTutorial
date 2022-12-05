@@ -99,7 +99,8 @@ We measure $L$ from data and estimate $\epsilon$ for $S$ using MC simulation (so
 Dividing our signal candidate events in data $(N)$ by the factor $\epsilon L$, gives an estimate of signal's cross section.
 In doing so, we have first to subtract the background contribution $B$ from the number of qualified events that found to be passing the signal's selection criteria (signal region).
 In some sense an LHC cross section measurement is as simple as an event counting experiment, provided that we know accurately $B$, $\epsilon$ and $L$.
-The uncertainty of $L$ is at the level of $2-3\%$, so all the analysis challenge boils down to estimate $\epsilon$ and $B$ in the signal region.
+The uncertainty of $L$ is at the level of $2-3%$, so all the analysis challenge boils down to estimate $\epsilon$ and $B$ in the signal region.
+
 
 
 
