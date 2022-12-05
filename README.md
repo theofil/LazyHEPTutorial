@@ -7,7 +7,7 @@ This is meant to be an introduction on how to analyze data from LHC experiments.
 There are plenty of tutorials based on [CMS open data](http://opendata.cern.ch/docs/about-cms), what's special here ?
 
 The short answer, is that there is nothing really special other than you can run an 
-[A-Z analysis solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb), without installing anything in your computer.  
+[A-Z analysis relying solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb), without installing anything in your computer.  
 
 The [LazyHEPTutorial](https://github.com/theofil/LazyHEPTutorial) is using the CMS open data files from the [HEP Tutorial](http://opendata.cern.ch/record/50), written by C. Sander & A. Schmidt,
 but is entirely rewritten so that it can be run in Google Colab using [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays.
@@ -83,8 +83,9 @@ We compare the data yield versus the MC simulated S+B sample in designated contr
 for which we expect the modeling of the data provided by the MC simulation to be sufficiently good.
 An example of this type of comparison is show below:
 
-![LazyHEPtutorial_j2.png](cern.ch/theofil/images/LazyHEPtutorial_j2.png)
+![LazyHEPtutorial_j2.png](https://theofil.web.cern.ch/theofil/images/LazyHEPtutorial_j2.png)
 
-
+using the data and MC simulation from the [pocket-size data sample](http://theofil.web.cern.ch/theofil/cmsod/files/) of the [HEP Tutorial](http://opendata.cern.ch/record/50) analyzed with the 
+code I wrote for an [A-Z analysis relying solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb). 
 
 
