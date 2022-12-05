@@ -57,7 +57,7 @@ units of inverse area $(fb^{-1})$, where $f$ stands for the femto $=10^{-15}$ or
 More pp collisions on tape, means more $fb^{-1}$'s, i.e., more L. 
 
 ### Master Equation
-The number of events $(N)$ we expect for a specific process  with known cross section $(\sigma)$ in a data sample of with luminosity $(L)$ is: 
+The number of events $(N)$ we expect for a specific process  with known cross section $(\sigma)$ in a data sample of known luminosity $(L)$ is: 
 
 $N = \epsilon \sigma L$  
 
@@ -85,7 +85,7 @@ We compare the data yield versus the MC simulated S+B sample in designated contr
 for which we expect the modeling of the data provided by the MC simulation to be sufficiently good.
 An example of this type of comparison is show below:
 
-![LazyHEPtutorial_j2.png](https://theofil.web.cern.ch/theofil/images/LazyHEPtutorial_j2.png)
+<img src="https://theofil.web.cern.ch/theofil/images/LazyHEPtutorial_j2.png" width="300">
 
 using the data and MC simulation from the [pocket-size data sample](http://theofil.web.cern.ch/theofil/cmsod/files/) of the [HEP Tutorial](http://opendata.cern.ch/record/50) analyzed with the 
 code I wrote for an [A-Z analysis relying solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb). 
