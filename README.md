@@ -24,6 +24,6 @@ So, if you would want to study the interactions taking during pp collisions, you
 
 There are many ways to open a ROOT file, the most poppular are:
 * Install ROOT, following the instructions from the [ROOT website](https://root.cern), use C/C++ and Python ecosystems to write up analysis code.
-* Install [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, use Python ecosystem for your analysis. If the line ```pip install uproot awkward''' doesn't mean anything to you, then you might consider installing [Anaconda](https://anaconda.org) and install the needed packages via the anaconda enviroment.
+* Install [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, use Python ecosystem for your analysis. If the line `pip install uproot awkward` doesn't mean anything to you, then you might consider installing [Anaconda](https://anaconda.org) and install the needed packages via the anaconda enviroment.
 
 
