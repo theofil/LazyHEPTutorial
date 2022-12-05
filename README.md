@@ -67,10 +67,12 @@ where $\epsilon$ is the detector efficiency for recording this process.
 While we have some control of the initial state, e.g., the center of mass energy of the colliding protons, we don't really control what comes out in the final state.
 Provided that there is sufficient energy in the initial state, all possible paths (particle interactions) will be taken by nature with probabilities that governed (we believe)
 by the laws of quantum mechanics. In fact, we can't do anything to stop:
+
 *  $4000 W^{\pm}$ / sec 
 *  $1200 Z^{0}$' / sec
 *  $17 t \bar{t}$ / sec
 *  $1 h^{0}$ / sec
+
 from being produced during LHC Run II, with $\sqrt{s} = 13$ TeV and $20 nb^{-1)/s}$ instantaneous luminosity of pp collisions.  
 
 However, the particle detectors don't detect directly the very short lived particles listed above, but rather detect their decay products. 
@@ -88,7 +90,16 @@ An example of this type of comparison is show below:
 <img src="https://raw.githubusercontent.com/theofil/LazyHEPTutorial/main/code/C/mumuMass.png" width="500">
 
 using the data and MC simulation from the [pocket-size data sample](http://theofil.web.cern.ch/theofil/cmsod/files/) of the [HEP Tutorial](http://opendata.cern.ch/record/50) analyzed with the 
-code provided in the `code` folder of this tutorial. 
+code provided in the [code folder](https://github.com/theofil/LazyHEPTutorial/tree/main/code) of this tutorial. 
+
+### Cross Section Measurements
+Perhaps the simplest and perhaps most fundamental type of an LHC physics analysis is a cross section measurement. 
+This can be found turning around the **Master Equation**.
+We measure $L$ from data and estimate $\epsilon$ for $S$ using MC simulation (sometimes corrected with data-driven scale factors). 
+Dividing our signal candidate events in data $(N)$ by the factor $\epsilon L$, gives an estimate of signal's cross section.
+In doing so, we have first to subtract the background contribution $B$ from the number of qualified events that found to be passing the signal's selection criteria (signal region).
+In some sense an LHC cross section measurement is as simple as an event counting experiment, provided that we know accurately $B$, $\epsilon$ and $L$.
+The uncertainty of $L$ is at the level of $2-3\%$, so all the analysis challenge boils down to estimate $\epsilon$ and $B$ in the signal region.
 
 
 
