@@ -34,7 +34,7 @@ There are many ways to open a ROOT file, the most popular are:
 
 This tutorial offers in addition a third way:
 
-3. Use Google Colab suite, [see the analysis example in Google Colab]((https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb)).
+3. Use Google Colab suite, [see the analysis example in Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb).
 
 The 1st solution is most probably what you will end up doing, sooner or later. 
 The 2nd is what you will probably need to learn if you would want to bring in to your analysis developments happening elsewhere 
@@ -47,3 +47,18 @@ For the 2nd, if the line `pip install uproot awkward` doesn't mean anything to y
 the needed packages for [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, inside the anaconda enviroment.
 
 
+## Physics Analysis
+The most basic quantity we are interested in particle physics is called [cross section](https://en.wikipedia.org/wiki/Cross_section_(physics)) $(\sigma)$ for a particular particle 
+interaction to take place.
+You could think the cross section of a process as the analogous of the probability for that process to take place, 
+but instead being a pure number it is measured in units of area, [1 barn](https://en.wikipedia.org/wiki/Barn_(unit)) $= 10^{-28}m^{2}$.
+The sample size of the LHC pp collision data is quantified by what is known as luminosity measurement (L) and has 
+units of inverse area $(fb^{-1})$, where $f$ stands for the femto $=10^{-15}$ order of magnitude. 
+More pp collisions on tape, means more $fb^{-1}$'s, i.e., more L. 
+
+### Master Equation
+The number of events $(N)$ we expect for a specific process  with known cross section $(\sigma)$ in a data sample of size $L$ is: 
+
+$N = \epsilon \sigma L$  
+
+where $\epsilon$ is the detector efficiency for recording this process.
