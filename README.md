@@ -72,11 +72,13 @@ by the laws of quantum mechanics. In fact, we can't do anything to stop:
 *  $17 t \bar{t}$ / sec
 *  $1 h^{0}$ / sec
 from being produced during LHC Run II, with $\sqrt{s} = 13$ TeV and $20 nb^{-1)/s}$ instantenous luminosity of pp collisions.  
+
 However, the particle detectors don't detect directly the very short lived particles listed above, but rather detect their decay products. 
 By applying selection criteria (analysis cuts) on the pp data, one can increase the efficiency of selecting a specific process (call it signal: S) against other processes (call them backgrounds: B) 
 that will also satisfy the applied criteria. 
+
 Ideally, we would want the signal efficiency to be 100% while the backgrounds to have 0% efficiency.
-However, this is almost never the case and there is always some background contribution in the sub-sample of data we selected to focus our attention.
+Unfortunately, this is almost never the case and there is always some background contribution in the sub-sample of data we selected to focus our attention.
 The amount of background events in our signal-enriched sample has to be estimated and MC simulation might be used for that purpose. 
 It is therefore typical that together with the MC simulation of the signal we do also consider the background simulation, which is usually much more difficult to get correctly. 
 We compare the data yield versus the MC simulated S+B sample in designated control regions selected in data, 
