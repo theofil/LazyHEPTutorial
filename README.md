@@ -4,6 +4,11 @@ This is meant to be an introduction on how to analyze data from LHC experiments.
 
 ![imageLT](https://theofil.web.cern.ch/theofil/images/imageLT.png)
 
+There are pleanty of tutorials based on [CMS open data](http://opendata.cern.ch/docs/about-cms), what's special here ?
+
+The short answer, is that there is nothing really special other than you can run an A-Z analysis solely on Google Colab, without installing anything in your computer.
+
+
 
 ## Introduction
 In this tutorial, we will make use of a pocket-size data sample that is suitable for doing everything with your laptop, or even with your phone if you can connect a keyboard to it :-).
@@ -19,6 +24,6 @@ So, if you would want to study the interactions taking during pp collisions, you
 
 There are many ways to open a ROOT file, the most poppular are:
 * Install ROOT, following the instructions from the [ROOT website](https://root.cern), use C/C++ and Python ecosystems to write up analysis code.
-* Install [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, use Python ecosystem for your analysis.
+* Install [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, use Python ecosystem for your analysis. If the line ```pip install uproot awkward''' doesn't mean anything to you, then you might consider installing [Anaconda](https://anaconda.org) and install the needed packages via the anaconda enviroment.
 
 
