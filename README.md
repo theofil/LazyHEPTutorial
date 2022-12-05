@@ -9,8 +9,14 @@ So, if you would want to study the interactions taking place upon colliding prot
 In this tutorial, we will make use of a pocket-size data sample that is suitable for doing everything with your laptop, or even with your phone if you can connect a keybord to it :-).
 But before going to technicalities of how we a data analysis, few general things to see and appreciate.
 
+
+* [Standard Model](https://en.wikipedia.org/wiki/Standard_Model)
+* [LHC video, absolute must see!](https://www.youtube.com/watch?v=pQhbhpU9Wrg)
+* [Processing LHC Data](https://www.youtube.com/watch?v=jDC3-QSiLB4) 
+* [CMS, all what you need to know for getting started](https://www.youtube.com/watch?v=S99d9BQmGB0)
+
 <ul>
-<li> [Standard Model] (https://en.wikipedia.org/wiki/Standard_Model)
+<li> [Standard Model](https://en.wikipedia.org/wiki/Standard_Model)</li>
 <li> [LHC video, absolute must see!](https://www.youtube.com/watch?v=pQhbhpU9Wrg) </li>
 <li> [Processing LHC Data](https://www.youtube.com/watch?v=jDC3-QSiLB4) </li>
 <li> [CMS, all what you need to know for getting started](https://www.youtube.com/watch?v=S99d9BQmGB0)</li>
