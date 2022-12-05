@@ -44,7 +44,7 @@ The 3rd solution is what you should try out in any case, since there are no prer
 At this point, I should say that the three solutions listed above are with inverted order in terms of difficulty. 
 For the 1st, even if you go for the python version of ROOT (pyROOT) you better know also some C++ if you want to get benefit of the ROOT performance, especially recent developments like RDataFrame.
 For the 2nd, if the line `pip install uproot awkward` doesn't mean anything to you then you might consider installing first [Anaconda](https://anaconda.org) and then installing 
-the needed packages for [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, inside the anaconda enviroment.
+the needed packages for [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, inside the anaconda environment.
 
 
 ## Physics Analysis
@@ -71,7 +71,7 @@ by the laws of quantum mechanics. In fact, we can't do anything to stop:
 *  $1200 Z^{0}$' / sec
 *  $17 t \bar{t}$ / sec
 *  $1 h^{0}$ / sec
-from being produced during LHC Run II, with $\sqrt{s} = 13$ TeV and $20 nb^{-1)/s}$ instantenous luminosity of pp collisions.  
+from being produced during LHC Run II, with $\sqrt{s} = 13$ TeV and $20 nb^{-1)/s}$ instantaneous luminosity of pp collisions.  
 
 However, the particle detectors don't detect directly the very short lived particles listed above, but rather detect their decay products. 
 By applying selection criteria (analysis cuts) on the pp data, one can increase the efficiency of selecting a specific process (call it signal: S) against other processes (call them backgrounds: B) 
@@ -88,6 +88,7 @@ An example of this type of comparison is show below:
 <img src="https://raw.githubusercontent.com/theofil/LazyHEPTutorial/main/code/C/mumuMass.png" width="500">
 
 using the data and MC simulation from the [pocket-size data sample](http://theofil.web.cern.ch/theofil/cmsod/files/) of the [HEP Tutorial](http://opendata.cern.ch/record/50) analyzed with the 
-code I wrote for an [A-Z analysis relying solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb). 
+code provided in the `code` folder of this tutorial. 
+
 
 
