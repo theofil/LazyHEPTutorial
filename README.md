@@ -57,8 +57,34 @@ units of inverse area $(fb^{-1})$, where $f$ stands for the femto $=10^{-15}$ or
 More pp collisions on tape, means more $fb^{-1}$'s, i.e., more L. 
 
 ### Master Equation
-The number of events $(N)$ we expect for a specific process  with known cross section $(\sigma)$ in a data sample of size $L$ is: 
+The number of events $(N)$ we expect for a specific process  with known cross section $(\sigma)$ in a data sample of with luminosity $(L)$ is: 
 
 $N = \epsilon \sigma L$  
 
-where $\epsilon$ is the detector efficiency for recording this process.
+where $\epsilon$ is the detector efficiency for recording this process. 
+
+### Physics Processes
+While we have some control of the initial state, e.g., the center of mass energy of the colliding protons, we don't really control what comes out in the final state.
+Provided that there is sufficient energy in the initial state, all possible paths (particle interactions) will be taken by nature with probabilities that governed (we believe)
+by the laws of quantum mechanics. In fact, we can't do anything to stop:
+*  $4000 W^{\pm}$ / sec 
+*  $1200 Z^{0}$' / sec
+*  $17 t \bar{t}$ / sec
+*  $1 h^{0}$ / sec
+from being produced during LHC Run II, with $\sqrt{s} = 13$ TeV and $20 nb^{-1)/s}$ instantenous luminosity of pp collisions.  
+However, the particle detectors don't detect directly the very short lived particles listed above, but rather detect their decay products. 
+By applying selection criteria (analysis cuts) on the pp data, one can increase the efficiency of selecting a specific process (call it signal: S) against other processes (call them backgrounds: B) 
+that will also satisfy the applied criteria. 
+Ideally, we would want the signal efficiency to be 100% while the backgrounds to have 0% efficiency.
+However, this is almost never the case and there is always some background contribution in the sub-sample of data we selected to focus our attention.
+The amount of background events in our signal-enriched sample has to be estimated and MC simulation might be used for that purpose. 
+It is therefore typical that together with the MC simulation of the signal we do also consider the background simulation, which is usually much more difficult to get correctly. 
+We compare the data yield versus the MC simulated S+B sample in designated control regions selected in data, 
+for which we expect the modeling of the data provided by the MC simulation to be sufficiently good.
+An example of this type of comparison is show below:
+
+![LazyHEPtutorial_j2.png](cern.ch/theofil/images/LazyHEPtutorial_j2.png)
+
+
+
+
