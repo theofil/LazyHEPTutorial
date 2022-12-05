@@ -68,10 +68,10 @@ While we have some control of the initial state, e.g., the center of mass energy
 Provided that there is sufficient energy in the initial state, all possible paths (particle interactions) will be taken by nature with probabilities that governed (we believe)
 by the laws of quantum mechanics. In fact, we can't do anything to stop:
 
-*  $4000 W^{\pm}$ / sec 
-*  $1200 Z^{0}$' / sec
-*  $17 t \bar{t}$ / sec
-*  $1 h^{0}$ / sec
+*  $4000\, W^{\pm}$ / sec 
+*  $1200\, Z^{0}$' / sec
+*  $17\, t\bar{t}$ / sec
+*  $1\, h^{0}$ / sec
 
 from being produced during LHC Run II, with $\sqrt{s} = 13$ TeV and $20 nb^{-1)/s}$ instantaneous luminosity of pp collisions.  
 
