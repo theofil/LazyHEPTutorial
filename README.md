@@ -35,7 +35,7 @@ This tutorial offers in addition a third way:
 
 3. Use Google Colab suite, [see the analysis example in Google Colab]((https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb)).
 
-The 1st solution is most probably what you will end up sooner or later, the 2nd is what you will probably need to learn if you would want to bring in at CERN developments happening elsewhere 
+The 1st solution is most probably what you will end up doing, sooner or later. 
+The 2nd is what you will probably need to learn if you would want to bring in to your analysis developments happening elsewhere 
 (not at CERN), most famous usecase is machine learning (e.g., keras, tensorflow, pytorch ...).
 
-, following the instructions from the [ROOT](https://root.cern), use C/C++ and Python ecosystems to write up analysis code.
