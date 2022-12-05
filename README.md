@@ -13,11 +13,12 @@ The [LazyHEPTutorial](https://github.com/theofil/LazyHEPTutorial) is using the C
 but is entirely rewritten so that it can be run in Google Colab using [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays.
 For comparison, a very minimal C/C++ version of a simple event-loop analysis using ROOT is provided in the code folder. 
 
-Which computing language you need to master if you want to work for CERN ? Both C/C++ and python are mandatories nowadays.
+Which computing language you need to master if you want to work for CERN ? Both C/C++ and python are mandatory nowadays.
 
 
 ## Introduction
-In this tutorial, we will make use of a [pocket-size data sample](http://theofil.web.cern.ch/theofil/cmsod/files/) that comes with the [HEP Tutorial](http://opendata.cern.ch/record/50), comprising of just a small fraction of pp collisionn data $(50fb^{-1})$ where at least one muon is present in the collision debris (single muon trigger),  suitable for doing everything with your laptop or even with your phone if you can connect a keyboard to it :-). But before going on technicalities of how we do a data analysis, few general things to see and appreciate.
+In this tutorial, we will make use of a [pocket-size data sample](http://theofil.web.cern.ch/theofil/cmsod/files/) that 
+comes with the [HEP Tutorial](http://opendata.cern.ch/record/50), comprising of just a small fraction of pp collision data $(50pb^{-1})$ where at least one muon is present in the collision debris (single muon trigger),  suitable for doing everything with your laptop or even with your phone if you can connect a keyboard to it :-). But before going on technicalities of how we do a data analysis, few general things to see and appreciate.
 
 * [Standard Model](https://en.wikipedia.org/wiki/Standard_Model)
 * [LHC video, absolute must see!](https://www.youtube.com/watch?v=pQhbhpU9Wrg)
@@ -29,7 +30,7 @@ So, if you would want to study the interactions taking during pp collisions, you
 
 There are many ways to open a ROOT file, the most popular are:
 1. Install [ROOT](https://root.cern). 
-2. Install [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, use Python ecosystem for your analysis. If the line `pip install uproot awkward` doesn't mean anything to you, then you might consider installing [Anaconda](https://anaconda.org) and install the needed packages via the anaconda environment.
+2. Install [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays.
 
 This tutorial offers in addition a third way:
 
@@ -37,5 +38,12 @@ This tutorial offers in addition a third way:
 
 The 1st solution is most probably what you will end up doing, sooner or later. 
 The 2nd is what you will probably need to learn if you would want to bring in to your analysis developments happening elsewhere 
-(not at CERN), most famous usecase is machine learning (e.g., keras, tensorflow, pytorch ...).
+(not at CERN), most famous use-case is machine learning (e.g., keras, tensorflow, pytorch ...). 
+The 3rd solution is what you should try out in any case, since there are no prerequisites and technical competences you need to have other than a gmail/android account.
+
+At this point, I should say that the three solutions listed above are with inverted order in terms of difficulty. 
+For the 1st, even if you go for the python version of ROOT (pyROOT) you better know also some C++ if you want to get benefit of the ROOT performance, especially recent developments like RDataFrame.
+For the 2nd, if the line `pip install uproot awkward` doesn't mean anything to you then you might consider installing first [Anaconda](https://anaconda.org) and then installing 
+the needed packages for [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays, inside the anaconda enviroment.
+
 
