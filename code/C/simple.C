@@ -136,12 +136,22 @@ void simple()
     events = (TTree*)fp->Get("events");
     init();
   
-    unsigned int nEvents = events->GetEntriesFast();
+    unsigned int nEvents = events -> GetEntriesFast();
+
+    int counts = 0;
+
     for(unsigned int i = 0 ; i<nEvents ; ++i)
     {
 	events->GetEntry(i);
-        cout << NMuon << ", " << NJet << endl;
+        // cout << NMuon << ", " << NJet << endl;
+
+	if (NMuon == 2 && NJet >= 2)  // analysis cuts
+	{
+	    counts = counts + 1;
+        }
     }
+
+   cout << "counts = " << counts << endl;
 }
 
 //int main(){simple (); return 0;}
