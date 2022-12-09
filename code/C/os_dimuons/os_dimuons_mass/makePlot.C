@@ -183,8 +183,9 @@ void makePlot()
             bool selection = false;
             float var = 0;
 
-            // select events with 2 muons having opposite sign
+            // select events with 2 muons having opposite sign, require leading muon to have pt > 25 GeV
             if(triggerIsoMu24 && NMuon>=2 && Muon_Charge[0]*Muon_Charge[1]<0 ) 
+            if(pow(Muon_Px[0]*Muon_Px[0] + Muon_Py[0]*Muon_Py[0], 0.5)>25) 
             {
                 selection = true; 
 
