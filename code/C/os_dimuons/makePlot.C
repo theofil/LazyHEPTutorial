@@ -221,7 +221,7 @@ void makePlot()
    counts[i] = histo[i]->IntegralAndError(0, histo[i]->GetNbinsX()+1, countsError[i]); // number of weighted events and their error
    printf("%s :  %2.1f ± %2.1f \n", labels[i].c_str(), counts[i], countsError[i]);
    
-   i = nFiles + 1;
+   i = nFiles;
    counts[i] = h_mc->IntegralAndError(0, h_mc->GetNbinsX()+1, countsError[i]); // number of weighted events and their error
    printf("%s :  %2.1f ± %2.1f \n", "MC  ", counts[i], countsError[i]);
   
