@@ -345,7 +345,7 @@ We interpret the $qq$ pair jets as coming from the hadronic decay of the W boson
  * jet multiplicity $N_\mathrm{j}$ 
  * b-jet multiplicity $N_\mathrm{bj}$ 
  * $m_\mathrm{qq}$ in bins of 10 GeV width
- * $m_{\mathrm{qqb}_{1}}$in bins of 10 GeV width
- * $m_{\mathrm{qqb}_{2}}$in bins of 10 GeV width
- * $m_{\mathrm{qqb}_{1}}$ and $m_{\mathrm{qqb}_{2}}$ stacked in the same histogram (e.g., fill the 2 entries in the same histogram for each event)
+ * $m_\mathrm{qqb_{1}}$ in bins of 10 GeV width
+ * $m_\mathrm{qqb_{2}}$ in bins of 10 GeV width
+ *  $m_\mathrm{qqb_{1}}$ and $m_\mathrm{qqb_{2}}$ stacked in the same histogram (e.g., fill the 2 entries in the same histogram for each event)
  * event counting statistics summary
