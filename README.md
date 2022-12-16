@@ -255,8 +255,8 @@ To calculate the transverse mass $m_\mathrm{T}$, we will work under the assumpti
 The event preselection starts with requiring  $N_\mathrm{\mu} \ge 2$ and  leading muon $p_\mathrm{T}>25$ GeV, for events with ``triggerIsoMu24==1`` true. In addition, require that the two muons have opposite charge.
 
 **Key figures to show in a presentation:**
- * invariant mass of the two muons $m(μ^{+}, μ^{-})$ in bins of 0.25 GeV width in the  mass range $0<m(μ^{+}, μ^{-})<20$ GeV
- * invariant mass of the two muons $m(μ^{+}, μ^{-})$  in bins of 1 GeV width in the  mass range $20<m(μ^{+}, μ^{-})<160$ GeV
+ * invariant mass of the two muons $m(μ^{+}, μ^{-})$ in bins of 0.25 GeV width in the range $[0, 20]$ GeV
+ * invariant mass of the two muons $m(μ^{+}, μ^{-})$  in bins of 1 GeV width in the   range $[20, 160]$ GeV
  * MET in bins of 10 GeV width
  * jet multiplicity $N_\mathrm{j}$
  * b-jet multiplicity $N_\mathrm{bj}$
@@ -275,7 +275,7 @@ http://arxiv.org/abs/1108.3773. What's the main differences among them and how t
 The event preselection starts with requiring  $N_\mathrm{\mu} \ge 1$ and  leading muon $p_\mathrm{T}>25$ GeV, at least one electron $N_\mathrm{e} \ge 1$, for events with ``triggerIsoMu24==1`` true. In addition, require that the two charged leptons have opposite charge.
 
 **Key figures to show in a presentation:**
- * invariant mass of the two muons $m(l^{+}, l^{-})$  in bins of 1 GeV width in the  mass range $0<m(l^{+}, l^{-})<160$ GeV
+ * invariant mass of the two muons $m(l^{+}, l^{-})$  in bins of 1 GeV width in the   range $[0, 160]$ GeV
  * MET in bins of 10 GeV width
  * jet multiplicity $N_\mathrm{j}$
  * b-jet multiplicity $N_\mathrm{bj}$
