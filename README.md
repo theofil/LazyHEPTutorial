@@ -234,7 +234,7 @@ Furthermore,  verify that the branching ratio we get in ttbar MC for events with
 * reconstructed muon $p_\mathrm{T}$ calculated from ``Muon_Px[0]`` and ``Muon_Py[0]`` for data and MC, without any threshold in the muon $p_\mathrm{T}$ for events selected ``triggerIsoMu24 == true``. (For this plot you will need to modify ``makePlot.C`` analysis script and use fine binning of 1 GeV width.) 
 
 
-## Project-2  [1μ]
+## Project-2  [μ]
 The event preselection starts with requiring exactly one muon $(N_\mathrm{\mu} = 1)$ final state, for events with ``triggerIsoMu24==1`` true. 
 
 Study the reconstructed muon $p_\mathrm{T}$ calculated from ``Muon_Px[0]`` and ``Muon_Py[0]`` $p_\mathrm{T}$  without any threshold starting from $p_\mathrm{T}=0$, for events selected ``triggerIsoMu24 == true``. (For this plot you will need to modify ``makePlot.C`` analysis script and use fine binning of 1 GeV width.)  Show that is reasonable to select only those events with a leading muon having  $p_\mathrm{T}>25$ GeV. 
@@ -251,7 +251,7 @@ To calculate the transverse mass $m_\mathrm{T}$, we will work under the assumpti
  * b-jet multiplicity $N_\mathrm{bj}$
  * event counting statistics summary
 
-## Project-3  [$μ^{+}μ^{-}$]
+## Project-3  [μμ]
 The event preselection starts with requiring  $N_\mathrm{\mu} \ge 2$ and  leading muon $p_\mathrm{T}>25$ GeV, for events with ``triggerIsoMu24==1`` true. In addition, require that the two muons have opposite charge.
 
 **Key figures to show in a presentation:**
@@ -271,7 +271,7 @@ To calculate the signal selection efficiency $\epsilon$ we will need also to cou
 Compare your measurement with the first measurement that CMS ever made, using pretty much the same data http://arxiv.org/abs/1010.5994, http://arxiv.org/abs/1105.5661, http://arxiv.org/abs/1106.0902
 http://arxiv.org/abs/1108.3773. What's the main differences among them and how they compare with yours in terms of precision?
 
-## Project-4  [$μ^{\pm}e^{\mp}$]
+## Project-4  [μe]
 The event preselection starts with requiring  $N_\mathrm{\mu} \ge 1$ and  leading muon $p_\mathrm{T}>25$ GeV, at least one electron $N_\mathrm{e} \ge 1$, for events with ``triggerIsoMu24==1`` true. In addition, require that the two charged leptons have opposite charge.
 
 **Key figures to show in a presentation:**
@@ -292,7 +292,7 @@ http://arxiv.org/abs/1108.3773. What's the main differences among them and how t
 
 *In this final state we expect significant contribution from the Drell-Yan ($Z/\gamma^{*}$) process, explain why and how the cut on the $m(l^{+}, l^{-})$ might help getting rid of this process.*
 
-## Project-5   [$1μ$ + $\ge 1\mathrm{bjet}$ + MET]
+## Project-5   [1μ + 1bjet + MET]
 The event preselection starts with requiring  $N_\mathrm{\mu} = 1$ and  leading muon $p_\mathrm{T}>25$ GeV, $N_\mathrm{bj} \ge 1$, for events with ``triggerIsoMu24==1`` true. 
 
 **Key figures to show in a presentation:**
@@ -311,7 +311,7 @@ To calculate the signal selection efficiency $\epsilon$ we will need also to cou
 Compare your measurement with the first measurement that CMS ever made, using pretty much the same data http://arxiv.org/abs/1010.5994, http://arxiv.org/abs/1105.5661, http://arxiv.org/abs/1106.0902
 http://arxiv.org/abs/1108.3773. What's the main differences among them and how they compare with yours in terms of precision?
 
-## Project-6   [$1μ$ + $\ge 4\mathrm{jet}$ + $\ge 2\mathrm{bjet}$]
+## Project-6   [1μ + 4 jets + 2 bjets]
 
 The event preselection starts with requiring  $N_\mathrm{\mu} = 1$ and  leading muon $p_\mathrm{T}>25$ GeV, $N_\mathrm{j} \ge 4$, $N_\mathrm{bj} \ge 2$, for events with ``triggerIsoMu24==1`` true. 
 
@@ -333,7 +333,7 @@ To calculate the signal selection efficiency $\epsilon$ we will need also to cou
 Compare your measurement with the first measurement that CMS ever made, using pretty much the same data http://arxiv.org/abs/1010.5994, http://arxiv.org/abs/1105.5661, http://arxiv.org/abs/1106.0902
 http://arxiv.org/abs/1108.3773. What's the main differences among them and how they compare with yours in terms of precision?
 
-## Project-7   [$m_\mathrm{top}$]
+## Project-7  [m(top)]
 Measure the $t$ quark and $W$ boson masses, using the same sample of events that have been selected for project 6 (semi-leptonic $t\bar{t}$). Assume the final state $tt\to WWbb\to \mu\nu qqbb$ as fully resolved, where we have omitted charge and anti-particle notation for simplicity. Assume that the first four leading jets can be attributed to $qqbb$. The $qq$ are the two jets that are not b-tagged, while for $bb$ we assign the two jets that pass the b-tagging threshold. 
 
 We interpret the $qq$ pair jets as coming from the hadronic decay of the W boson. Compute the invariant mass distribution of the two $q$ jets $m_\mathrm{qq}$ as well as the invariant mass distribution of the three jet system $m_\mathrm{qqb}$ assuming that is coming from the same parent $t$ quark decay. We don't know which of the two b-jets is the correct one to be paired with the $qq$, i.e., which of the bjets has the same $t$-quark parent as the $q$-jets. Try both combinations and name them $m_\mathrm{qqb_{1}}$ and $m_\mathrm{qqb_{2}}$, where $b_{1}$  and $b_{2}$ is the leading and sub-leading b-jets.
