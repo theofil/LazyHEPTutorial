@@ -11,7 +11,7 @@ This is meant to be an introduction on how to analyze data from the LHC experime
 
   
 
-The short answer, is that there is nothing really special other than you can run an [A-Z analysis template relying solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb), without installing anything in your computer.
+The short answer is that you can run an [A-Z analysis template relying solely on Google Colab](https://github.com/theofil/LazyHEPTutorial/blob/main/code/python/LazyHEPTutorialColab.ipynb), without installing anything in your computer.
 
 The [LazyHEPTutorial](https://github.com/theofil/LazyHEPTutorial) is using the CMS open data files from the [HEP Tutorial](http://opendata.cern.ch/record/50), written **by C. Sander & A. Schmidt**, but is entirely rewritten so that it can be run in Google Colab using [uproot](https://uproot.readthedocs.io/en/latest/) and [awkward](https://awkward-array.readthedocs.io/en/stable/index.html) arrays. In addition, a minimal C/C++ version (all-in-one-source-file) of a simple event-loop analysis relying on ROOT is provided in the code folder and will automatically fetch from the web all ROOT files needed to run the analysis.
 
@@ -266,7 +266,7 @@ The event preselection starts with requiring  $N_\mathrm{\mu} \ge 2$ and  leadin
 
 Measure the $t\bar{t}$ cross section for a signal region that you will define by possibly optimizing MET and $N_\mathrm{bj}$, to achieve good signal significance defined here as $S/\sqrt{B}$. Assume that the relative uncertainty   for the signal selection efficiency is $30\%$  (i.e., $\delta\epsilon/\epsilon = 0.3$) and that the luminosity $L$ comes with $5\%$ uncertainty. For the background estimation $B$, assume that is only as large as the corresponding MC statistical uncertainty reported by your program.
 
-To calculate the signal selection efficiency $\epsilon$ we will need also to count how many $t\bar{t}$ (weighted) events we have in our disposal in total ($N_\mathrm{gen}^{\mathrm{tot}}$) inside the ``ttbar.root`` file. The efficiency will simply be $\epsilon = N_\mathrm{sel}/N_\mathrm{gen}^{\mathrm{tot}}$, where $N_\mathrm{sel}$ is the total number of (weighted) events passing the selection cuts of our signal region.
+To calculate the signal selection efficiency $\epsilon$ we will need also to count how many $t\bar{t}$ (weighted) events we have in our disposal in total $(N_\mathrm{gen}^{\mathrm{tot}})$ inside the ``ttbar.root`` file. The efficiency will simply be $\epsilon = N_\mathrm{sel}/N_\mathrm{gen}^{\mathrm{tot}}$, where $N_\mathrm{sel}$ is the total number of (weighted) events passing the selection cuts of our signal region.
 
 Compare your measurement with the first measurement that CMS ever made, using pretty much the same data http://arxiv.org/abs/1010.5994, http://arxiv.org/abs/1105.5661, http://arxiv.org/abs/1106.0902
 http://arxiv.org/abs/1108.3773. What's the main differences among them and how they compare with yours in terms of precision?
